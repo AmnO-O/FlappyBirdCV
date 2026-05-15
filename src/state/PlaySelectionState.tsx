@@ -12,7 +12,7 @@ class PlaySelectionState implements IAppState{
             <PlaySelectionScreen 
             navigate={(type) => {
             if (type === ScreenType.MAIN_MENU) context.changeState(new MainMenuState());
-            
+            else console.warn("Unknown navigation type:", type);
         }} 
             />
         )
