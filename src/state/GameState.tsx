@@ -52,7 +52,7 @@ const GamePlayComponent: React.FC<{ mode: GameMode; onGameOver: () => void }> = 
 
  useEffect(() => {
   const handleKeyDown = (e: KeyboardEvent) => {
-   if (e.code === 'Space' || e.code === 'ArrowUp') jump();
+   if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'Enter' || e.code == 'W') jump();
   };
 
   if (mode === GameMode.KEYBOARD) {
